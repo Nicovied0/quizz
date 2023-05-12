@@ -1,3 +1,7 @@
+pre {
+  margin: 0 1rem;
+}
+
 pre,
 textarea {
   font-family: Consolas, monospace;
@@ -5,6 +9,7 @@ textarea {
   color: #E6E6E6;
   padding: 0.2em 0.4em;
   font-size: 1em;
+  width: 25rem;
   font-family: 'Consolas', 'Courier New', monospace;
 }
 
@@ -15,6 +20,59 @@ textarea {
   line-height: 1.5;
 }
 
+.div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80vh;
+  align-items: center;
+}
+
+.divVSandConsole {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+}
+
 textarea:focus {
   outline: none;
+}
+
+.console {
+  margin: 0 1rem;
+  width: 25rem;
+  background-color: #15222e;
+  color: #c2e1eb;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.consoleName {
+  color: #c2e1eb;
+}
+
+.consoleText {
+  color: #98c379;
+}
+
+.x {
+  color: #93a3bc;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.console {
+  background-color: black;
+  color: white;
+  font-family: monospace;
+  padding: 1em;
+  border-radius: 0.5em;
+}
+
+.console-line {
+  padding: 0.5em 0;
+}
+
+.incorrect {
+  color: red;
 }

@@ -1,19 +1,46 @@
-<h1>Ejercicio del dia</h1>
-<p>Completa la siguiente función:</p>
-<div>
-  <pre><code>
-    function suma(a, b) {{ '{ '  }}
-    <textarea
-    [(ngModel)]="codigo"
-    name="codigo"
-    cols="30"
-    rows="10"
-    placeholder="// Completa el código aquí"
-  ></textarea>
-  {{ '} '  }}
+<div class="div">
+  <h1 class="title is-4">Ejercicio del dia</h1>
+  <p class="subtitle is-5">Completa la siguiente función:</p>
+  <div>
+    <div class="divVSandConsole">
+      <pre><code>
+      function suma(a, b) {{ '{ '  }}
+      <textarea
+      [(ngModel)]="codigo"
+      name="codigo"
+      cols="30"
+      spellcheck="false"
+      rows="10"
+      placeholder="// Completa el código aquí"
+    ></textarea>
+    {{ '} '  }}
+  
+      </code></pre>
 
-    </code></pre>
+      <div class="console">
+        <div class="is-flex is-flex-direction-row ml-0">
+          <h2 class="consoleName">Console</h2>
+          <h2 class="x">x</h2>
+        </div>
 
-  <button type="button" (click)="verificar()">Verificar resultado</button>
-  <div [innerHTML]="feedback"></div>
+        <div
+          *ngIf="this.feedback === 'Respuesta incorrecta, vuelve a intentarlo.'"
+          [ngClass]="{
+            incorrect:
+              this.feedback === 'Respuesta incorrecta, vuelve a intentarlo.'
+          }"
+        >
+          {{ this.feedback }}
+        </div>
+      </div>
+    </div>
+    <button
+      id="buttonRun"
+      class="button is-primary ml-6"
+      type="button"
+      (click)="verificar()"
+    >
+      Run >
+    </button>
+  </div>
 </div>
