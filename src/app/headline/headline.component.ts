@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-headline',
@@ -7,4 +8,15 @@ import { Component } from '@angular/core';
 })
 export class HeadlineComponent {
 
+  constructor(private router: Router) { }
+
+  goHome() {
+    this.router.navigate(['/'])
+  }
+  goExericice1() {
+    this.router.navigate(['/ejercicio1'])
+  }
+  goExericice2() {
+    this.router.navigate(['/ejercicio2'])
+  }
 }

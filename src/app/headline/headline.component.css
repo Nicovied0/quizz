@@ -13,11 +13,13 @@
   align-items: center;
 }
 
-.tittleDaily{
+.tittleDaily {
   font-size: revert;
   font-weight: 800;
   font-family: monospace;
 }
-.git,.contactanos{
+
+.git,
+.contactanos {
   margin: 0 1rem;
 }

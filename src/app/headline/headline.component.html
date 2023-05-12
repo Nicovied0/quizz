@@ -1,6 +1,6 @@
 <nav class="navbar is-transparent">
   <div class="navbar-brand">
-    <a class="navbar-item " href="/">
+    <a class="navbar-item" (click)="goHome()">
       <img
         src="../../assets/icon.png"
         alt="Bulma: a modern CSS framework based on Flexbox"
@@ -24,12 +24,12 @@
 
   <div id="navbarExampleTransparentExample" class="navbar-menu">
     <div class="navbar-start">
-      <a class="navbar-item" href="/"> Home </a>
+      <a class="navbar-item" (click)="goHome()"> Home </a>
       <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link" href=""> Ejercicios </a>
+        <a class="navbar-link" (click)="goHome()"> Ejercicios </a>
         <div class="navbar-dropdown is-boxed">
-          <a class="navbar-item" href="/ejercicio1"> Ejercicio 1 </a>
-          <a class="navbar-item" href="/ejercicio2"> Ejercicio 2 </a>
+          <a class="navbar-item" (click)="goExericice1()"> Ejercicio 1 </a>
+          <a class="navbar-item" (click)="goExericice2()"> Ejercicio 2 </a>
         </div>
       </div>
     </div>
@@ -37,7 +37,7 @@
     <div class="navbar-end">
       <div class="navbar-item">
         <div class="field is-grouped">
-          <button class="button is-success git" >Git</button>
+          <button class="button is-success git">Git</button>
 
           <button class="button is-primary contactanos">Contactanos</button>
         </div>
