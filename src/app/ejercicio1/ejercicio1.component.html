@@ -1,1 +1,19 @@
-<p>ejercicio1 works!</p>
+<h1>Ejercicio del dia</h1>
+<p>Completa la siguiente función:</p>
+<div>
+  <pre><code>
+    function suma(a, b) {{ '{ '  }}
+    <textarea
+    [(ngModel)]="codigo"
+    name="codigo"
+    cols="30"
+    rows="10"
+    placeholder="// Completa el código aquí"
+  ></textarea>
+  {{ '} '  }}
+
+    </code></pre>
+
+  <button type="button" (click)="verificar()">Verificar resultado</button>
+  <div [innerHTML]="feedback"></div>
+</div>
