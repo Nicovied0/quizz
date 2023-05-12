@@ -1,0 +1,16 @@
+.div {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img {
+  max-width: 100%;
+  height: 10rem;
+}
+
+.div2 {
+  padding: 4rem;
+}

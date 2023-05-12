@@ -1,0 +1,23 @@
+.navbar {
+  min-height: 6.25rem;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-item img {
+  max-height: 3.75rem;
+}
+
+.navbar-start {
+  display: flex;
+  align-items: center;
+}
+
+.tittleDaily{
+  font-size: revert;
+  font-weight: 800;
+  font-family: monospace;
+}
+.git,.contactanos{
+  margin: 0 1rem;
+}
