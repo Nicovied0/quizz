@@ -72,7 +72,6 @@ export class Ejercicio1Component {
         setTimeout(() => {
           button.classList.remove('is-loading');
           this.showMessage(feedback.innerHTML = "Respuesta incorrecta, vuelve a intentarlo.");
-          // console.log(feedback.innerHTML, "aca2")
         }, 4000);
 
 
@@ -98,9 +97,7 @@ export class Ejercicio1Component {
         this.showMessage(feedback.innerHTML = "Respuesta incorrecta, vuelve a intentarlo.");
       }, 4000);
       // Si hay un error en la evaluación del código proporcionado por el usuario, indicamos que la respuesta es incorrecta
-
     }
     this.feedback = feedback.innerHTML;
-    console.log(this.feedback)
   }
 }

@@ -1,5 +1,6 @@
 pre {
   margin: 0 1rem;
+  height: 24rem;
 }
 
 pre,
@@ -9,14 +10,20 @@ textarea {
   color: #E6E6E6;
   padding: 0.2em 0.4em;
   font-size: 1em;
-  width: 25rem;
+  width: 30rem;
   font-family: 'Consolas', 'Courier New', monospace;
+  border-radius: 0.5em;
+}
+code {
+  padding: 1rem;
 }
 
 textarea {
   border: none;
   resize: none;
   font-size: 16px;
+  height: 10rem;
+  width: 25rem;
   line-height: 1.5;
 }
 
@@ -38,14 +45,7 @@ textarea:focus {
   outline: none;
 }
 
-.console {
-  margin: 0 1rem;
-  width: 25rem;
-  background-color: #15222e;
-  color: #c2e1eb;
-  font-weight: 600;
-  padding: 1rem;
-}
+
 
 .consoleName {
   color: #c2e1eb;
@@ -62,10 +62,13 @@ textarea:focus {
 }
 
 .console {
+  font-weight: 600;
   background-color: black;
   color: white;
   font-family: monospace;
   padding: 1em;
+  margin: 0 1rem;
+  width: 30rem;
   border-radius: 0.5em;
 }
 
@@ -75,4 +78,23 @@ textarea:focus {
 
 .incorrect {
   color: red;
+}
+
+
+
+
+.code .keyword {
+  color: #f92672;
+}
+
+.code .function-name {
+  color: #a6e22e;
+}
+
+.code .parameter {
+  color: #ff00008a;
+}
+
+.code .string {
+  color: orange;
 }

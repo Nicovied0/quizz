@@ -27,6 +27,7 @@ export class LandingComponent {
 
   scheduleLocalStorageCleanup() {
     const timeDiffMs = this.getTimeDifferenceUntilNextMidnightInArgentina();
+    // console.log(timeDiffMs)
     setTimeout(() => {
       localStorage.removeItem('randomNumber');
     }, timeDiffMs);
